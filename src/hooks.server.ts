@@ -1,5 +1,5 @@
 import PocketBase from 'pocketbase';
-import { serializeNonPOJOs } from '$lib/utils/index.ts';
+import { serializeNonPOJOs } from '$lib/utils';
 import type { Handle } from '@sveltejs/kit';
 
 export const handle = (async ({ event, resolve }) => {
