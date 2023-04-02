@@ -25,6 +25,7 @@
 		"eslint": "^8.28.0",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-svelte3": "^4.0.0",
+		"pocketbase": "0.12.1",
 		"postcss": "^8.4.21",
 		"prettier": "^2.8.0",
 		"prettier-plugin-svelte": "^2.8.1",
@@ -39,7 +40,6 @@
 	"type": "module",
 	"dependencies": {
 		"daisyui": "^2.51.5",
-		"dotenv": "^16.0.3",
-		"pocketbase": "^0.13.1"
+		"dotenv": "^16.0.3"
 	}
 }
