@@ -3,7 +3,7 @@ import { serializeNonPOJOs } from '$lib/utils';
 import type { Handle } from '@sveltejs/kit';
 
 export const handle = (async ({ event, resolve }) => {
-	event.locals.pb = new PocketBase(process.env.PB_URL);
+	event.locals.pb = new PocketBase(import.meta.env.VITE_PB_URL);
 	event.locals.pb.authStore.loadFromCookie(event.request.headers.get('cookie') || '');
 
 	if (event.locals.pb.authStore.isValid) {
